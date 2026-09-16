@@ -1,0 +1,7 @@
+LearningTokenTest:testFuzz_Mint(uint96) (runs: 256, μ: 40819, ~: 41618)
+LearningTokenTest:test_DeployerBalance() (gas: 10608)
+LearningTokenTest:test_InitialSupply() (gas: 7945)
+LearningTokenTest:test_Mint() (gas: 44627)
+LearningTokenTest:test_Name() (gas: 13009)
+LearningTokenTest:test_Symbol() (gas: 12965)
+LearningTokenTest:test_Transfer() (gas: 47594)
