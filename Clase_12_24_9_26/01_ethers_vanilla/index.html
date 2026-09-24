@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Counter dApp — ethers.js</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <div class="eyebrow">Clase 12 · ethers.js</div>
+    <h1>Counter dApp</h1>
+    <p class="subtitle">Frontend ya armado. En clase completamos solamente la interacción Web3.</p>
+
+    <section class="panel">
+      <div class="row between">
+        <span>Red</span>
+        <strong id="network">Sepolia</strong>
+      </div>
+      <div class="row between">
+        <span>Wallet</span>
+        <code id="walletAddress">No conectada</code>
+      </div>
+      <div class="row between">
+        <span>Balance</span>
+        <strong id="walletBalance">- ETH</strong>
+      </div>
+      <button id="connectButton" class="primary">Connect Wallet</button>
+    </section>
+
+    <section class="counter">
+      <span class="label">Valor guardado en el contrato</span>
+      <div id="counterValue" class="value">?</div>
+      <div class="actions">
+        <button id="decrementButton">− Decrement</button>
+        <button id="incrementButton">+ Increment</button>
+      </div>
+      <button id="refreshButton" class="secondary">Refrescar lectura</button>
+    </section>
+
+    <section class="status-box">
+      <span>Estado</span>
+      <strong id="status">Listo para comenzar</strong>
+    </section>
+  </main>
+
+  <!-- ethers.js v6 por CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.15.0/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
